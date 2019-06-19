@@ -1,0 +1,26 @@
+@import "~bulma/bulma";
+@import "./custom_colors";
+
+#restaurant {
+  img{
+    @media(min-width:641px){
+      max-height: 59px;
+      width: 100%;
+    }
+  }
+  .infos {
+    @media(min-width:641px) {
+      margin-left: 20px;
+    }
+    h2.title {
+      font-size: 16pt;
+    }
+    h4.subtitle {
+      font-size: 11pt;
+      margin-bottom: 10px;
+    }
+    span.dashed_box {
+      font-size: 10pt;
+    }
+  }
+}

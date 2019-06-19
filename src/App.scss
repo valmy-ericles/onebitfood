@@ -1,0 +1,39 @@
+@charset 'utf-8';
+
+@import "~bulma/sass/utilities/functions";
+
+@import "./styles/custom_colors.scss";
+
+$custom-colors: (
+  "custom-green-darker": ($custom-green-darker),
+  "custom-green-lighter": ($custom-green-lighter),
+  "custom-gray": ($custom-gray),
+  "custom-gray-darker": ($custom-gray-darker),
+  "custom-black": ($custom-black),
+  "custom-orange": ($custom-orange),
+);
+
+// import bulma styles
+@import "~bulma/bulma";
+
+// import rbx style fixes
+@import "~rbx/rbx";
+
+
+.dashed_box {
+  font-size: 14px;
+  background: $white;
+  font-weight: bold;
+  border: 1px dashed $custom-gray;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.modal_root {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 2;
+}

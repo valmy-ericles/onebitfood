@@ -1,0 +1,26 @@
+@import "~bulma/bulma";
+@import "./custom_colors";
+
+div.top-navbar {
+  background-color: $white;
+  border-bottom: 1px solid $custom-gray;
+  nav.navbar {
+    height: 70px;
+    z-index: 1;
+    navbar{
+      z-index: 1;
+    }
+    .navbar-brand {
+      height: 100%;
+      z-index: 1;
+      img {
+        height: 69px;
+      }
+    }
+
+    .navbar-item.navbar-center {
+      flex-grow: 1;
+      justify-content: center;
+    }
+  }
+}
